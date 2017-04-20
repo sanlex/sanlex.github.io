@@ -11,11 +11,6 @@ author: senlex
 
 关于写倒计时大家可能都都比较熟悉，使用 setTimeout 或 setInterval 就可以搞定。几秒钟或者几分钟的倒计时这样写没有问题，但是如果是长时间的倒计时，这样写就会不准确。如果用户修改了他的设备时间，这样的倒计时就没有意义了。今天就说说写一个精确的倒计时的方法。
 
-![](https://img.alicdn.com/tfs/TB18QnlOpXXXXcVXpXXXXXXXXXX-388-256.png)
-
-
-
-
 ## 原理
 
 众所周知 setTimeout 或者 setInterval 调用的时候会有微小的误差。有人做了一个 [demo](https://bl.ocks.org/kenpenn/raw/92ebaa71696b4c4c3acd672b1bb3f49a/) 来观察这个现象并对其做了修正。短时间的误差倒也可以接受，但是作为一个长时间的倒计时，误差累计就会导致倒计时不准确。
@@ -89,11 +84,8 @@ getServerTime((serverTime) => {
 
 ## 补充
 
-在写倒计时的时候遇到了一个坑这里记录一下。
 
 **千万别在倒计时结束的时候请求接口**。会让服务端瞬间 QPS 峰值达到非常高。
-
-![](https://img.alicdn.com/tfs/TB1LBzjOpXXXXcnXpXXXXXXXXXX-154-71.png)
 
 如果在倒计时结束的时候要使用新的数据渲染页面，正确的做法是：
 
