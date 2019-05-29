@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Sxh
-brief-intro:  Full-stack web developer
+title: sxh
+brief-intro:  web developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sanlex.github.io" # the base hostname & protocol for your site
 
@@ -17,7 +17,7 @@ permalink: /:year/:month/:day/:title/
 twitter_username: 
 facebook_username: 
 github_username:  sanlex
-email: 752238708@qq.com
+email: fbidiots@outlook.com
 weibo_username: 我在等碗盒饭
 zhihu_username: 小小小竹马
 linkedIn_username: 
@@ -28,7 +28,7 @@ description_footer: 在开发的路上，搞事情！
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: scoot
+duoshuo_shortname: carl
 # disqus_shortname: scoot
 
 # statistic analysis 统计代码
